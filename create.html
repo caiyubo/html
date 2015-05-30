@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>创建作品集 artsay</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- artsay -->
+    <link href="css/artsay.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+  </head>
+  <body>
+    <!-- 左边导航 -->
+    <div class="fixed-left">
+      <div class="logo">ArtSay</div>
+      <ul class="mynav layout">
+        <a href="index.html"><li><div class="sprite sprite-home"></div>首页</li>
+        <li><div class="sprite sprite-picture"></div>热门作品</li>
+        <li><div class="sprite sprite-theme"></div>艺人专题</li>
+        <li><div class="sprite sprite-drawer"></div>查看收藏</li>
+        <li class="active"><div class="sprite sprite-brush"></div>创建作品集</li>
+        <li><div class="sprite sprite-user"></div>我的主页</li>
+        <a href="myproduct.html"><li><div class="sprite sprite-book"></div>我的作品集</li></a>
+      </ul>
+      <ul class="layout fixed-bottom">
+        <li><div class="sprite sprite-set"></div>设置</li>
+        <li><div class="sprite sprite-help"></div>帮助</li>
+        <li><div class="sprite sprite-quit"></div>退出</li>
+      </ul>
+    </div>
+
+    <!-- 右边 -->
+    <div class="home-right">
+      <!-- 标题 -->
+      <h2>创建作品集</h2>
+      <div class="separator"></div>
+
+      <!-- 创建 -->
+      <div class="box-create">
+        <!-- 选项 -->
+        <ul class="layout layer-cake">
+          <li>
+            <div class="smbtn smbtn-default pull-right">编辑</div>
+            <h3 class="title">作品集名称</h3>
+            <div class="text-invest">艺品联盟</div>
+          </li>
+          <li>
+            <div class="smbtn smbtn-default pull-right">编辑</div>
+            <h3 class="title">作品集介绍</h3>
+            <div class="text-invest">我是一只羊，一只羊-</div>
+          </li>
+          <li>
+            <h3 class="title">
+              选择类型：
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <span class="font-md">表情瀑布流</span>
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <span class="font-md">长微博</span>
+              <input type="radio" name="inlineRadioOptions" checked="checked" id="inlineRadio1" value="option1"> <span class="font-md">文艺作品集</span>
+            </h3>
+          </li>
+        </ul>
+        <!-- 上传作品 -->
+        <div class="upload-img">
+          <h4>上传作品</h4>
+          <div class="layout">
+            <div class="box-upload-img"></div>
+            <div class="box-upload-img"></div>
+            <div class="box-upload-img"></div>
+            <div class="box-upload-img"></div>
+            <div class="box-upload-img"></div>
+            <div class="box-upload-img"><input type="file">+</div>
+            <div class="box-upload-img">-</div>
+          </div>
+        </div>
+
+        <ul class="layout">
+          <li class="pull-right">
+            <div class="smbtn smbtn-default">保存</div>
+            <div class="smbtn smbtn-default">下一步</div>
+          </li>
+        </ul>
+      </div><!-- 创建 -->
+    </div><!-- 右边 -->
+    
+    <div id="register"></div>
+  </body>
+</html>
+
+<script>
+  $(function() {
+    $("#register").load("include/register.html",function() {
+      $(this).find(".sprite-close").on('click',function() {
+        $(".register-box").hide()
+      })
+    });
+  })
+</script>

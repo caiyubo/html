@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>呓人百科 artsay</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- artsay -->
+    <link href="css/artsay.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/global.js"></script>
+  </head>
+  <body class="home">
+    <!-- 左边导航 -->
+    <div class="fixed-left">
+      <div class="logo">ArtSay</div>
+      <ul class="mynav layout">
+        <a href="index.html"><li><div class="sprite sprite-home"></div>首页</li></a>
+        <a href="hot-prod.html"><li><div class="sprite sprite-picture"></div>热门作品</li></a>
+        <a href="artists.html"><li class="active"><div class="sprite sprite-theme"></div>艺人专题</li></a>
+        <a class="checkin displaynone" href="index.html"><li><div class="sprite sprite-drawer"></div>查看收藏</li></a>
+        <a class="checkin displaynone" href="create.html"><li><div class="sprite sprite-brush"></div>创建作品集</li></a>
+        <a class="checkin displaynone" href="index.html"><li><div class="sprite sprite-user"></div>我的主页</li></a>
+        <a class="checkin displaynone" href="myproduct.html"><li><div class="sprite sprite-book"></div>我的作品集</li></a>
+      </ul>
+      <ul class="layout fixed-bottom">
+        <li><div class="sprite sprite-set"></div>设置</li>
+        <li><div class="sprite sprite-help"></div>帮助</li>
+        <li class="login"><div class="sprite sprite-quit"></div>登录</li>
+      </ul>
+    </div>
+
+    <!-- 右边 -->
+    <div class="mycontainer">
+      <div class="home-list">
+        <br>
+        <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="#">发现艺术家</a></li>
+          <li role="presentation"><a href="#">我关注的人</a></li>
+        </ul>
+        <hr>
+        <!-- 艺术家列表 -->
+        <div class="box-artists">
+          <div class="artists-tx">
+            <img src="img/luo/tx.jpg">
+          </div>
+          <div class="second">
+            <h4>罗晓俊</h4>
+            <p>深圳</p>
+            <p>作品数 100</p>
+            <div class="btn btn-success">+ 关注</div>
+          </div>
+          <div class="third">
+            <p>在平时喧闹的生活里，我总会安静的想象一些关于感情的事情。然后用我心里的女孩说出来。透过她的眼神，你也许能看到一位忧伤的女孩。</p>
+          </div>
+          <div class="box-img">
+            <img src="img/ak/sixiang/1.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/2.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/3.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/4.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/1.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/2.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/3.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/4.jpg" alt="" class="pull-left">
+          </div>
+        </div><!-- box-artists -->
+
+        <div class="box-artists">
+          <div class="artists-tx">
+            <img src="img/ak/tx.jpg">
+          </div>
+          <div class="second">
+            <h4>黄小黄</h4>
+            <p>深圳</p>
+            <p>作品数 40</p>
+            <div class="btn btn-fail" disabled="disabled">+ 已关注</div>
+          </div>
+          <div class="third">
+            <p>风格跳脱，可前卫可市井，迷恋美食，服装设计，电影旅行，猫，长发男子，短发女子，泰国控。念旧，喜欢记录过去的时光，画速写是一种记录方式。</p>
+          </div>
+          <div class="box-img">
+            <img src="img/ak/sixiang/1.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/2.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/3.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/4.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/1.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/2.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/3.jpg" alt="" class="pull-left">
+            <img src="img/ak/sixiang/4.jpg" alt="" class="pull-left">
+          </div>
+        </div><!-- box-artists -->
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(function() {
+    var boxImg = $(".box-artists").width()-480;
+    $(".box-artists>.box-img").width(boxImg);
+  })
+</script>

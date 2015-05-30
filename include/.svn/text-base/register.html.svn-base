@@ -1,0 +1,13 @@
+<div class="register-box">
+  <div class="register">
+    <div class="title" style="font-size:32px; margin: 40px 0;">注册呓语</div>
+    <div class="sprite sprite-close"></div>
+    <div class="login-box">
+      <input type="text" placeholder="手机号" id="re-mobile">
+      <input type="password" placeholder="密码" id="re-password">
+      <div class="smbtn smbtn-black">发送验证码</div>
+      <input type="text" class="sm" placeholder="输入验证码">
+      <div class="smbtn smbtn-default">确定</div>
+    </div>
+  </div>
+</div>
